@@ -49,13 +49,13 @@ class App(customtkinter.CTk):
 
     def btn_total_on_click(self):
         arroz=self.txt_importe_1.get()
-        arroz=int(arroz)
+        arroz=float(arroz)
 
         pasta=self.txt_importe_2.get()
-        pasta=int(pasta)
+        pasta=float(pasta)
 
         lentejas=self.txt_importe_3.get()
-        lentejas=int(lentejas)
+        lentejas=float(lentejas)
 
         resultado= arroz + pasta + lentejas
 
@@ -67,13 +67,13 @@ class App(customtkinter.CTk):
 
     def btn_promedio_on_click(self):
         arroz=self.txt_importe_1.get()
-        arroz=int(arroz)
+        arroz=float(arroz)
 
         pasta=self.txt_importe_2.get()
-        pasta=int(pasta)
+        pasta=float(pasta)
 
         lentejas=self.txt_importe_3.get()
-        lentejas=int(lentejas)
+        lentejas=float(lentejas)
 
         resultado= arroz + pasta + lentejas / 3
 
@@ -83,13 +83,13 @@ class App(customtkinter.CTk):
 
     def btn_total_iva_on_click(self):
         arroz=self.txt_importe_1.get()
-        arroz=int(arroz)
+        arroz=float(arroz)
 
         pasta=self.txt_importe_2.get()
-        pasta=int(pasta)
+        pasta=float(pasta)
 
         lentejas=self.txt_importe_3.get()
-        lentejas=int(lentejas)
+        lentejas=float(lentejas)
 
         resultado= arroz + pasta + lentejas 
 
