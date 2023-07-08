@@ -48,16 +48,16 @@ class App(customtkinter.CTk):
         self.btn_total_iva.grid(row=5, pady=10, columnspan=2, sticky="nsew")
 
     def btn_total_on_click(self):
-        arroz=self.txt_importe_1.get()
-        arroz=float(arroz)
+        valor_1=self.txt_importe_1.get()
+        valor_1=float(valor_1)
 
-        pasta=self.txt_importe_2.get()
-        pasta=float(pasta)
+        valor_2=self.txt_importe_2.get()
+        valor_2=float(valor_2)
 
-        lentejas=self.txt_importe_3.get()
-        lentejas=float(lentejas)
+        valor_3=self.txt_importe_3.get()
+        valor_3=float(valor_3)
 
-        resultado= arroz + pasta + lentejas
+        resultado= valor_1 + valor_2 + valor_3
 
         Mensaje= f"total de sus productos es {resultado}"
 
@@ -66,37 +66,37 @@ class App(customtkinter.CTk):
 
 
     def btn_promedio_on_click(self):
-        arroz=self.txt_importe_1.get()
-        arroz=float(arroz)
+        valor_1=self.txt_importe_1.get()
+        valor_1=float(valor_1)
 
-        pasta=self.txt_importe_2.get()
-        pasta=float(pasta)
+        valor_2=self.txt_importe_2.get()
+        valor_2=float(valor_2)
 
-        lentejas=self.txt_importe_3.get()
-        lentejas=float(lentejas)
+        valor_3=self.txt_importe_3.get()
+        valor_3=float(valor_3)
 
-        resultado= arroz + pasta + lentejas / 3
+        resultado= (valor_1 + valor_2 + valor_3) / 3
 
         Mensaje= f"el promedio de sus productos es {resultado}"
 
         alert(title="Valor",message=Mensaje)  
 
     def btn_total_iva_on_click(self):
-        arroz=self.txt_importe_1.get()
-        arroz=float(arroz)
+        valor_1=self.txt_importe_1.get()
+        valor_1=float(valor_1)
 
-        pasta=self.txt_importe_2.get()
-        pasta=float(pasta)
+        valor_2=self.txt_importe_2.get()
+        valor_2=float(valor_2)
 
-        lentejas=self.txt_importe_3.get()
-        lentejas=float(lentejas)
+        valor_3=self.txt_importe_3.get()
+        valor_3=float(valor_3)
 
-        resultado= arroz + pasta + lentejas 
+        resultado= valor_1 + valor_2 + valor_3
 
         IVA=(resultado * 21)/100
-        TOTAL= IVA + resultado
+        TOTAL_con_IVA= IVA + resultado
 
-        Mensaje= f"total de sus productos con IVA es {TOTAL }"
+        Mensaje= f"total de sus productos con IVA es {TOTAL_con_IVA }"
 
         alert(title="Valor",message=Mensaje)      
     
