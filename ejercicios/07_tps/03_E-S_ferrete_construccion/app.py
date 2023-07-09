@@ -81,10 +81,10 @@ class App(customtkinter.CTk):
         cantidad_de_alambre= (metros_linieal * 7)
 
         cantidad_de_materiales= f"El departamento tiene {metros_cuadrado} m2 y {metros_linieal} ml"
-        cantidad_de_materiales += f", se necesitan {postes_gruesos:.2f} postes gruesos de 2.4 m"
-        cantidad_de_materiales += f" y  {postes_finos:.2f} postes finos de 2.2 m "
+        cantidad_de_materiales += f", se necesitan {postes_gruesos:.2f} postes gruesos "
+        cantidad_de_materiales += f" y  {postes_finos:.2f} postes finos "
         cantidad_de_materiales += f", se utilizaran {cantidad_de_varillas} varillas"
-        cantidad_de_materiales += f" y por ultimo se necesitan {cantidad_de_alambre} m de alambre"
+        cantidad_de_materiales += f" y por ultimo se necesitan {cantidad_de_alambre} m de alambre alta resistencia 17/15."
         alert(title= "materiales necesarios", message= cantidad_de_materiales)
 
 
