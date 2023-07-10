@@ -72,11 +72,11 @@ class App(customtkinter.CTk):
         metros_cuadrado= largo * ancho
         metros_linieal= (ancho + ancho + largo + largo)
 
-        postes_gruesos= (metros_linieal / 250) + 4
+        postes_gruesos= (metros_linieal // 250) + 4
 
-        postes_finos= (metros_linieal / 12) 
+        postes_finos= (metros_linieal // 12) 
 
-        cantidad_de_varillas= (metros_linieal / 2)
+        cantidad_de_varillas= (metros_linieal // 2)
 
         cantidad_de_alambre= (metros_linieal * 7)
 
