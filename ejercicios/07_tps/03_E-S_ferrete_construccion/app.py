@@ -74,7 +74,7 @@ class App(customtkinter.CTk):
 
         postes_gruesos= (metros_linieal // 250) + 4
 
-        postes_finos= (metros_linieal // 12) 
+        postes_finos= (metros_linieal // 12) - postes_gruesos
 
         cantidad_de_varillas= (metros_linieal // 2)
 
