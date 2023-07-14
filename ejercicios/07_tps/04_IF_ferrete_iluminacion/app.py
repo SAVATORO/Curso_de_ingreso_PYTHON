@@ -69,8 +69,6 @@ class App(customtkinter.CTk):
                                        descuento= 0.10
                                    else:
                                        descuento=0.05
-                                       if precio >=4000:
-                                           descuento=0.05
 
                 
                 
