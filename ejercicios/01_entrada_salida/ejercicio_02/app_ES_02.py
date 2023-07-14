@@ -29,7 +29,7 @@ class App(customtkinter.CTk):
 
     def btn_mostrar_on_click(self):
         nombre=prompt(title="Datos",prompt= "nombre")
-        alert(title="Info", message= "Hola" +  nombre)
+        alert(title="Info", message= f"Hola {nombre}")
         
         
     

@@ -44,9 +44,7 @@ class App(customtkinter.CTk):
         precio= 800
         precio=float(precio)
         descuento= None
-        
-    
-        
+
         if cantidad >=6:
             descuento=0.5
 
@@ -80,8 +78,8 @@ class App(customtkinter.CTk):
             precio_final=precio_final - (precio_final*0.05)
 
         alert(title="Tp4", message=f"el precio final es {precio_final}")
-        
-    
+
+
 if __name__ == "__main__":
     app = App()
     app.geometry("300x300")
