@@ -41,7 +41,10 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
+        operador_a=self.txt_operador_a.get()
+        operador_b=self.txt_operador_b.get()
+
+        
         
         
     

@@ -24,7 +24,7 @@ class App(customtkinter.CTk):
         
     
     def btn_mostrar_iteracion_on_click(self):
-        pass
+        alert(title="UTN", message="") 
     
     
 if __name__ == "__main__":
