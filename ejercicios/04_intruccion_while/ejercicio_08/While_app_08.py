@@ -32,27 +32,30 @@ class App(customtkinter.CTk):
 
 
     def btn_comenzar_ingreso_on_click(self):
-        acomulador=0
-        contador=0
-        numero_ingresado=0
-
-        while numero_ingresado !=None and numero_ingresado == 0:
+        suma_acomulada= 0
+        producto = 1
+        contador = 0
+        
+        while True:
             numero_ingresado=prompt(title="EJ8",prompt="Ingrese un numero")
 
-            if numero_ingresado:
-                numero_ingresado=int(numero_ingresado)
+            if numero_ingresado == None or numero_ingresado =='0':
+                break
+            numero_ingresado=int(numero_ingresado)
 
-                contador +=1
-                
-                acomulador += numero_ingresado
+            if numero_ingresado > 0:
+                suma_acomulada = suma_acomulada + numero_ingresado
 
-                producto= numero_ingresado * acomulador
+            elif numero_ingresado < 0:
+                producto= producto * numero_ingresado
+
+            
 
 
-            self.txt_suma_acumulada.delete(0,100)
-            self.txt_producto.delete(0,100)        
-            self.txt_suma_acumulada.insert(0,acomulador)
-            self.txt_producto.insert(0,producto)
+        self.txt_suma_acumulada.delete(0,100)
+        self.txt_producto.delete(0,100)        
+        self.txt_suma_acumulada.insert(0,suma_acomulada)
+        self.txt_producto.insert(0,producto)
 
     
 if __name__ == "__main__":

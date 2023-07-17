@@ -33,7 +33,42 @@ class App(customtkinter.CTk):
 
 
     def btn_comenzar_ingreso_on_click(self):
-        pass
+        acomulador_suma_negativos= 0
+        acomulador_suma_positivos= 0 
+        contador_positivos= 0 
+        contador_negativos= 0
+        contador_ceros= 0
+        numero=" "
+        diferencia = 0
+
+        while numero != None:
+            numero= prompt(title="EJ10", prompt="Ingrese numero")
+
+            if numero != None:
+                numero=int(numero)
+
+                if numero < 0 :
+                    acomulador_suma_negativos= acomulador_suma_negativos + numero
+                    contador_negativos=contador_negativos + 1
+                elif numero > 0:
+                    acomulador_suma_positivos=acomulador_suma_positivos + numero
+                    contador_positivos= contador_positivos + 1
+                else:
+                    contador_ceros= contador_ceros + 1
+
+        diferencia=contador_positivos - contador_negativos
+
+        mensaje= f"la suma acomulada de los negativos es:{acomulador_suma_negativos}\n"
+        mensaje += f"la suma acomulada de los positivos {acomulador_suma_positivos}\n"
+        mensaje += f"cantidad de numeros positivos ingresados {contador_positivos}"
+        mensaje += f"cantidad de nuemros negativos {contador_negativos}"
+        mensaje += f"cantidad de ceros {contador_ceros}"
+        mensaje += f"diferencia entre la cantidad de los numeros positivos ingresados y los negativos es: {diferencia}"
+
+        alert(title="EJ10" , message=mensaje)
+
+
+
 
     
 if __name__ == "__main__":
