@@ -40,7 +40,7 @@ class App(customtkinter.CTk):
     
         self.txt_nombre.delete(0,100)
 
-        self.txt_nombre.insert(0, nombre + apellido)
+        self.txt_nombre.insert(0, nombre  + apellido)
 
         
     

@@ -42,7 +42,15 @@ class App(customtkinter.CTk):
 
     def btn_mostrar_on_click(self):
         operador_a=self.txt_operador_a.get()
+        operador_a=int(operador_a)
         operador_b=self.txt_operador_b.get()
+        operador_b=int(operador_b)
+
+        division = operador_a % operador_b
+
+        mensaje=f"El resto de la division es {division}"
+        
+        alert(title="EJ8", message=mensaje)
 
         
         

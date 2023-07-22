@@ -27,6 +27,7 @@ class App(customtkinter.CTk):
         
         for elemento in self.lista_datos:
             
+            
             alert(title="EJ3",message=elemento)
 
         
