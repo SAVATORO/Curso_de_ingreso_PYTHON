@@ -27,10 +27,14 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
+        alert(title="Ej2", message=self.lista_datos)
+        
         
     def btn_cargar_on_click(self):
-        pass
+        
+        for elementos in range(3):
+            elementos=prompt(title="Ej2",prompt="Ingrese un número")
+            self.lista_datos.append(elementos)
     
 if __name__ == "__main__":
     app = App()

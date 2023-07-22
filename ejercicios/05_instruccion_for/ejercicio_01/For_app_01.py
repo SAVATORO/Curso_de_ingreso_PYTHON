@@ -23,7 +23,11 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass 
+        
+        
+        for numero in range(5):
+            alert(title="Ej1",message=f"{numero+1}")
+    
        
             
 

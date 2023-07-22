@@ -21,7 +21,17 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
+        valor=prompt(title="Ej4",prompt="Ingrese valor")
+        valor=int(valor)
+
+        for valor in range():
+            valor=9
+            break
+            alert("stop")
+
+
+
+
         
     
 if __name__ == "__main__":

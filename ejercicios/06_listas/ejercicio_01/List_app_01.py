@@ -24,8 +24,9 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
-        
+
+        for elementos in self.lista_datos:
+            alert(title="Ej1",message=elementos)        
         
     
 if __name__ == "__main__":

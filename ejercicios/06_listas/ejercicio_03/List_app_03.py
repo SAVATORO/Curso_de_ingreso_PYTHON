@@ -24,7 +24,14 @@ class App(customtkinter.CTk):
 
 
     def btn_calcular_on_click(self):
-        pass
+        
+        for elemento in self.lista_datos:
+            
+            alert(title="EJ3",message=elemento)
+
+        
+    
+        
     
 if __name__ == "__main__":
     app = App()
