@@ -24,10 +24,10 @@ class App(customtkinter.CTk):
         valor=prompt(title="Ej4",prompt="Ingrese valor")
         valor=int(valor)
 
-        for valor in range():
+        for valor in range(1,100):
             valor=9
             break
-            alert("stop")
+            
 
 
 
